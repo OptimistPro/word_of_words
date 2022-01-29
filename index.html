@@ -116,6 +116,8 @@
 <style type='text/css'>
 html { overflow-x: hidden; overflow-y: hidden; }
 </style>
+
+<script  src=" https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></ script>
 <script>
 function ShowAd() {
 	      bridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
@@ -176,7 +178,7 @@ bridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
 	<script type='text/javascript' src='index.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
-		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":38714672,"index.wasm":13342428},"focusCanvas":true,"gdnativeLibs":[]};
+		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":38713888,"index.wasm":13342428},"focusCanvas":true,"gdnativeLibs":[]};
 		var engine = new Engine(GODOT_CONFIG);
 
 		(function() {
