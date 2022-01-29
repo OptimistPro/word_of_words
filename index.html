@@ -117,9 +117,12 @@
 html { overflow-x: hidden; overflow-y: hidden; }
 </style>
 
-<script src='src/bridge.js'></script>
+<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 <script>
-vkBridge.send('VKWebAppInit');
+  // Sends event to client
+  vkBridge.send('VKWebAppInit');
+</script>
+<script>
 function ShowAd() {
 	      bridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
 
