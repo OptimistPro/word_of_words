@@ -117,8 +117,10 @@
 html { overflow-x: hidden; overflow-y: hidden; }
 </style>
 
-<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+<script type='application/javascript' src='browser.min.js'>
+import bridge from '@vkontakte/vk-bridge';
 
+</script>
 <script>
 vkBridge.send('VKWebAppInit');
 function ShowAd() {
