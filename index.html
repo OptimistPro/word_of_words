@@ -122,6 +122,14 @@ html { overflow-x: hidden; overflow-y: hidden; }
   // Sends event to client
   vkBridge.send('VKWebAppInit');
 </script>
+	<script>
+  // Sends event to client
+  import bridge from '@vkontakte/vk-bridge';
+import '@vkontakte/vkui';
+ 
+bridge.send("VKWebAppInit", {});
+</script>
+	
 <script>
 function ShowAd() {
 	     vkBridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
