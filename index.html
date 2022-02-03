@@ -117,19 +117,16 @@
 html { overflow-x: hidden; overflow-y: hidden; }
 </style>
 
-//<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 <script>
   // Sends event to client
-  //vkBridge.send('VKWebAppInit');
-	import bridge from '@vkontakte/vk-bridge';
-	bridge.send('VKWebAppInit');
-
+  vkBridge.send('VKWebAppInit');
 </script>
 <script>
 function ShowAd() {
-	     bridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
+	     vkBridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
 
-bridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
+vkBridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
 .then(data => console.log(data.result))
 .catch(error => console.log(error));
 	   }
