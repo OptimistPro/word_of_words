@@ -132,9 +132,9 @@ html { overflow-x: hidden; overflow-y: hidden; }
 //	   }
 //</script>
 
-<script type="module">
+<script>
   // Sends event to client
-  import bridge from '@vkontakte/vk-bridge';
+  import {bridge} from '@vkontakte/vk-bridge';
 bridge.send("VKWebAppInit", {});
 
 function ShowAd() {
