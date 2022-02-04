@@ -1,13 +1,7 @@
 import bridge from '@vkontakte/vk-bridge';
 bridge.send('VKWebAppInit');
 
-function ShowAd() {
-	     bridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
 
-bridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
-.then(data => console.log(data.result))
-.catch(error => console.log(error));
-	   }
 var Godot = (function() {
   var _scriptDir = typeof document !== 'undefined' && document.currentScript ? document.currentScript.src : undefined;
   
