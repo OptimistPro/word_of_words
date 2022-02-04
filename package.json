@@ -1,6 +1,5 @@
 {
   "dependencies": {
-   "type": "module",
     "@vkontakte/vk-bridge": "^2.5.3"
   }
 }
