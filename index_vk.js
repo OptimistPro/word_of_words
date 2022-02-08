@@ -1,2 +1,3 @@
-import bridge from 'node_modules\@vkontakte\vk-bridge\dist';
-bridge.send('VKWebAppInit', {});
+import bridge from '@vkontakte/vk-bridge';
+
+bridge.send("VKWebAppInit", {});
