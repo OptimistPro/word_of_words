@@ -1,0 +1,25 @@
+{
+  "name": "npt_test",
+  "version": "1.0.0",
+  "description": "word",
+  "main": "index.js",
+  "scripts": {
+    "test": "word"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OptimistPro/word_of_words.git"
+  },
+  "keywords": [
+    "word"
+  ],
+  "author": "startgames",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OptimistPro/word_of_words/issues"
+  },
+  "homepage": "https://github.com/OptimistPro/word_of_words#readme",
+  "dependencies": {
+    "@vkontakte/vk-bridge": "^2.5.3"
+  }
+}

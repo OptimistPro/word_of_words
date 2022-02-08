@@ -117,20 +117,20 @@
 html { overflow-x: hidden; overflow-y: hidden; }
 </style>
 
-<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-<script>
+//<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+//<script>
    //Sends event to client
-  vkBridge.send('VKWebAppInit');
-</script>
-<script>
-function ShowAd() {
-	     vkBridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
+  //vkBridge.send('VKWebAppInit');
+//</script>
+//<script>
+//function ShowAd() {
+	//     vkBridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
 
-vkBridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
-.then(data => console.log(data.result))
-.catch(error => console.log(error));
-	   }
-</script>
+//vkBridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
+//.then(data => console.log(data.result))
+//.catch(error => console.log(error));
+	//   }
+//</script>
 
 
 <script type="text/javascript">
@@ -196,6 +196,15 @@ vkBridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
 	</div>
 
 	<script type='text/javascript' src='index.js'></script>
+	<script>
+function ShowAd() {
+	     bridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
+
+bridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
+.then(data => console.log(data.result))
+.catch(error => console.log(error));
+	   }
+</script>
 	<script type='text/javascript'>//<![CDATA[
 
 		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":38713856,"index.wasm":13342428},"focusCanvas":true,"gdnativeLibs":[]};
