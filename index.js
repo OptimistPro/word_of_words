@@ -1,5 +1,4 @@
-import bridge from '@vkontakte/vk-bridge';
-bridge.send(“VKWebAppInit", {});
+
 var Godot = (function() {
   var _scriptDir = typeof document !== 'undefined' && document.currentScript ? document.currentScript.src : undefined;
   
