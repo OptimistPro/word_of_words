@@ -117,7 +117,7 @@
 html { overflow-x: hidden; overflow-y: hidden; }
 </style>
 
-<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+<! --<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 <script>
    //Sends event to client
   vkBridge.send('VKWebAppInit');
@@ -131,7 +131,22 @@ vkBridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
 .catch(error => console.log(error));
 	   }
 </script>
+-->
 
+<script>
+   //Sends event to client
+  import bridge from '@vkontakte/vk-bridge';
+  bridge.send('VKWebAppInit');
+</script>
+<script>
+function ShowAd() {
+	     bridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
+
+bridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
+.then(data => console.log(data.result))
+.catch(error => console.log(error));
+	   }
+</script>
 
 <script type="text/javascript">
 	    document.addEventListener('DOMContentLoaded', function() {

@@ -1,0 +1,22 @@
+{
+  "name": "wordwords",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OptimistPro/word_of_words.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OptimistPro/word_of_words/issues"
+  },
+  "homepage": "https://github.com/OptimistPro/word_of_words#readme",
+  "dependencies": {
+    "@vkontakte/vk-bridge": "^2.5.3"
+  }
+}
