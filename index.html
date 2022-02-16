@@ -118,10 +118,10 @@ html { overflow-x: hidden; overflow-y: hidden; }
 </style>
 
 
-
-<script type='module'>
+<script type='module' src='./node_modules/@vkontakte/vk-bridge/dist/index.js'>
+<script>
    //Sends event to client
-  import bridge from './node_modules/@vkontakte/vk-bridge';
+  //import bridge from './node_modules/@vkontakte/vk-bridge';
   bridge.send('VKWebAppInit');
 </script>
 <script>
