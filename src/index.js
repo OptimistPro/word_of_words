@@ -1,7 +1,7 @@
 import bridge from '@vkontakte/vk-bridge';
 bridge.send('VKWebAppInit');
 bridge.send("VKWebAppAllowNotifications");
-function ShowAdModule() {
+window.ShowAdModule = function() {
 	     bridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
 
 bridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
