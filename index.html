@@ -120,7 +120,7 @@ html { overflow-x: hidden; overflow-y: hidden; }
 
 <script type='module'>
    //Sends event to client
-  import bridge from './node_modules/@vkontakte/vk-bridge/dist/index.js';
+  import bridge from './node_modules/@vkontakte/vk-bridge/dist/index.es.js';
   bridge.send('VKWebAppInit');
 function ShowAd() {
 	     bridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
