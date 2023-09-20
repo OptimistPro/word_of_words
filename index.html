@@ -131,9 +131,9 @@ vkBridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
 .catch(error => console.log(error));
 	   }
 
-function show_banner(){
+function show_banner(close_b){
 vkBridge.send('VKWebAppShowBannerAd', {
-  banner_location: 'top',can_close:false
+  banner_location: 'top',can_close:close_b
   })
  .then((data) => { 
     if (data.result) {
@@ -143,7 +143,7 @@ vkBridge.send('VKWebAppShowBannerAd', {
     console.log(error);
   });
 }
-show_banner();
+show_banner(false);
 </script>
 
 
